@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+
+  /* Glass effect utility classes */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .glass-card {
+    @apply glass rounded-lg shadow-lg transition-all duration-300;
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-4xl font-bold tracking-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl font-bold tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl font-bold tracking-tight;
+  }
+
+  .subheading {
+    @apply text-lg text-secondary-foreground;
+  }
+
+  .markdown-preview h1 {
+    @apply text-2xl font-bold mb-4 mt-6;
+  }
+
+  .markdown-preview h2 {
+    @apply text-xl font-bold mb-3 mt-5;
+  }
+
+  .markdown-preview h3 {
+    @apply text-lg font-bold mb-2 mt-4;
+  }
+
+  .markdown-preview p {
+    @apply mb-4;
+  }
+
+  .markdown-preview ul {
+    @apply list-disc ml-6 mb-4;
+  }
+
+  .markdown-preview ol {
+    @apply list-decimal ml-6 mb-4;
+  }
+
+  .markdown-preview code {
+    @apply bg-muted px-1 py-0.5 rounded;
+  }
+
+  .markdown-preview pre {
+    @apply bg-muted p-4 rounded mb-4 overflow-auto;
+  }
+
+  .markdown-preview blockquote {
+    @apply border-l-4 border-primary pl-4 italic;
+  }
+}
