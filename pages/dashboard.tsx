@@ -36,7 +36,7 @@ export default function DashboardPage() {
         <GlassCard>
           <div className="flex justify-between items-start mb-4">
             <h2 className="text-xl font-bold">Upcoming Tasks</h2>
-            <Link href="/syllabus">
+            <Link href="/subjects">
               <Button variant="ghost" size="sm" className="text-primary">
                 View All
               </Button>

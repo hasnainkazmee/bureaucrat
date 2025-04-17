@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -19,9 +18,9 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { href: "/dashboard", label: "Dashboard", icon: Home },
-  { href: "/syllabus", label: "Syllabus", icon: BookOpen },
+  { href: "/subjects", label: "Syllabus", icon: BookOpen }, // Changed from /syllabus to /subjects
   { href: "/notes", label: "Notes", icon: FileText },
-  { href: "/community", label: "Community", icon: Globe }, // Added Community
+  { href: "/community", label: "Community", icon: Globe },
   { href: "/progress", label: "Progress", icon: PieChart },
   { href: "/profile", label: "Profile", icon: User },
   { href: "/settings", label: "Settings", icon: Settings },
